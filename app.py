@@ -22,8 +22,10 @@ def video():
 
 @app.route('/get-songs')
 def getSongs():
+    #for testing
+    #emotion = 'happy'
     recommendedPlaylist = SpotipyAPI().getSongOnMood(emotion)
-
+    
     return render_template('index.html', recommendedPlaylist=recommendedPlaylist)
 
 

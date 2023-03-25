@@ -24,3 +24,10 @@ body{
     color: #0d6efd;
     border: 2px solid #0d6efd;
 }
+
+.song-name{
+    overflow: hidden;
+    max-width: 75ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
